@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Fundo */
+body {
+  background: linear-gradient(135deg, #4c5c96, #1f1f2e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Container do chat */
+.chat-container {
+  background: #2a2b3c;
+  width: 100%;
+  max-width: 500px;
+  height: 90vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  background: #3b3c5a;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 18px;
+}
+
+header select {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Lista de mensagens */
+#messages {
+  flex: 1;
+  padding: 15px;
+  list-style: none;
+  overflow-y: auto;
+}
+
+/* Mensagens */
+li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+li.user {
+  text-align: right;
+}
+
+li.bot {
+  display: flex;
+  align-items: center;
+}
+
+li.bot .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  border-top: 1px solid #444;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+
+form button {
+  padding: 10px 15px;
+  background: #4c5c96;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #6c7abf;
+}

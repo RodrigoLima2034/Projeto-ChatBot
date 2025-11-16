@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Internacional com Bots</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="chat-container">
+    <header>
+      <h2>Chat Internacional 🌍</h2>
+      <select id="lang" title="Idioma" aria-label="Idioma">
+        <option value="pt" selected>Português</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="ja">日本語</option>
+      </select>
+    </header>
+
+    <ul id="messages"></ul>
+
+    <form id="chat-form">
+      <input id="msg" type="text" placeholder="Digite sua mensagem..." autocomplete="off" />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
