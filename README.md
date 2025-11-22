@@ -42,7 +42,7 @@ Este projeto é uma aplicação de chat em [translate:tempo real] que conecta us
 
 ### Passos para rodar localmente
 
-git clone <URL_DO_SEU_REPOSITORIO>
+git clone <https://github.com/RodrigoLima2034/Projeto-ChatBot.git>
 cd projeto-12
 npm install
 node server.js
